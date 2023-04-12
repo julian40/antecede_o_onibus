@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .minha_div
+        {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: center; 
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <button onclick="MudarCor();">
+        <img src="dio-jsjsjsjs.png" width="200px">
+        <br>
+        <p>
+         exemplo
+        </p>
+    </button>
+    <br>
+    <div class="minha_div" id="minha_div">
+        texto dentro da div
+    </div>
+
+</body>
+
+    <script>
+
+        contador = 0
+
+        function MudarCor()
+        {
+            minha_div.style.backgroundColor = "green"
+            minha_div.style.borderStyle = "solid"
+            minha_div.style.borderColor = "red"
+            contador = contador + 1
+            minha_div.innerHTML = contador
+        }
+
+    </script>
+
+</html>
